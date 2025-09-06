@@ -36,169 +36,242 @@
 <!-- Section Disclaimer -->
 <section style="background:#f1c40f; color:#2c3e50; padding:30px 20px; text-align:center; border-radius:10px; max-width:1000px; margin:20px auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
   <p style="font-size:16px; line-height:1.5; margin:0;">
-    <strong>Liga Pro Kaltim 2025</strong> adalah ajang internal pembinaan catur di Kalimantan Timur. Sistem klasemen dan rating yang digunakan bersifat internal, bukan rating resmi FIDE. Tujuan utama liga ini adalah memberi kesempatan atlet untuk berproses, berkembang, dan merasakan pengalaman bertanding, bukan semata-mata mengejar hadiah.
+    <strong>Liga Catur Pro Kaltim 2025</strong> adalah ajang internal pembinaan catur di Kalimantan Timur. Sistem klasemen dan rating yang digunakan bersifat internal, bukan rating resmi FIDE. Tujuan utama liga ini adalah memberi kesempatan atlet untuk berproses, berkembang, dan merasakan pengalaman bertanding, bukan semata-mata mengejar hadiah.
   </p>
 </section
 
-<!-- Menu Navigasi -->
-<nav>
-  <a href="#daftar">Daftar Peserta</a>
-  <a href="#divisi">Divisi</a>
-  <a href="#klasemen">Klasemen</a>
-  <a href="#peraturan">Peraturan</a>
-  <a href="#galeri">Galeri</a>
-</nav>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Liga Catur Pro Kaltim 2025</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f9; }
+header { background:#3498db; color:#fff; padding:20px; text-align:center; }
+section { max-width:600px; margin:20px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+h2,h3 { color:#2c3e50; margin-top:0; }
+table { width:100%; border-collapse: collapse; margin-bottom:20px; }
+th, td { border:1px solid #ddd; padding:8px; text-align:center; }
+th { background:#3498db; color:#fff; }
+tr:nth-child(even) { background:#ecf0f1; }
+tr:hover { background:#d6eaf8; }
+/* Tab styles */
+.tabs { display:flex; justify-content:center; margin-bottom:20px; flex-wrap: wrap; }
+.tabs button { background:#3498db; color:#fff; border:none; padding:10px 20px; margin:2px; border-radius:5px; cursor:pointer; }
+.tabs button.active { background:#2c3e50; }
+.tabcontent { display:none; }
+.tabcontent.active { display:block; }
+</style>
+</head>
+<body>
 
-<!-- Section Daftar Peserta -->
-<section id="daftar">
-  <h2>Daftar Peserta</h2>
-  
-  <h3>Divisi Rookie</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
-    <!-- 15 peserta -->
-    <tr><td>1</td><td>Pemain 1</td><td>1200</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>1250</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>1100</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>1300</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>1050</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>1180</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>1120</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>1270</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>1240</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>1190</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>1080</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>1150</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>1220</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>1280</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>1100</td></tr>
-  </table>
-  
-  <h3>Divisi Standard</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
-    <tr><td>1</td><td>Pemain 1</td><td>1500</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>1600</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>1550</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>1700</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>1400</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>1650</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>1450</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>1680</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>1620</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>1580</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>1480</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>1630</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>1520</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>1670</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>1500</td></tr>
-  </table>
-  
-  <h3>Divisi Elite</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
-    <tr><td>1</td><td>Pemain 1</td><td>1750</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>1800</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>1900</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>2000</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>1850</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>1720</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>1780</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>1950</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>1820</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>1770</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>1920</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>1740</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>1805</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>1880</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>1705</td></tr>
-  </table>
+<header>
+<h1>Liga Catur Pro Kaltim 2025</h1>
+<p>Belajar, Berlatih, Bertanding, meraih prestasi tertinggi </p>
+</header>
+
+<section>
+<div class="tabs">
+  <button class="tablink active" onclick="openTab(event,'Rookie')">Rookie</button>
+</div>
+
+<!-- Rookie Tab -->
+<div id="Rookie" class="tabcontent active">
+<h2>Divisi Rookie</h2>
+<h3>Daftar Peserta</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>1200</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>1250</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>1100</td></tr>
+<tr><td>4</td><td>Pemain 4</td><td>1000</td></tr>
+
+</table>
+
+<h3>Klasemen</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>0</td><td>1200</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>0</td><td>1250</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>0</td><td>1100</td></tr>
+</table>
+</div>
 </section>
 
-<!-- Section Klasemen -->
-<section id="klasemen">
-  <h2>Klasemen Liga Sesi 1</h2>
-
-  <h3>Divisi Rookie</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
-    <tr><td>1</td><td>Pemain 1</td><td>0</td><td>1200</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>0</td><td>1250</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>0</td><td>1100</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>0</td><td>1300</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>0</td><td>1050</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>0</td><td>1180</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>0</td><td>1120</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>0</td><td>1270</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>0</td><td>1240</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>0</td><td>1190</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>0</td><td>1080</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>0</td><td>1150</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>0</td><td>1220</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>0</td><td>1280</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>0</td><td>1100</td></tr>
-  </table>
-
-  <h3>Divisi Standard</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
-    <tr><td>1</td><td>Pemain 1</td><td>0</td><td>1500</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>0</td><td>1600</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>0</td><td>1550</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>0</td><td>1700</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>0</td><td>1400</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>0</td><td>1650</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>0</td><td>1450</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>0</td><td>1680</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>0</td><td>1620</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>0</td><td>1580</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>0</td><td>1480</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>0</td><td>1630</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>0</td><td>1520</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>0</td><td>1670</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>0</td><td>1500</td></tr>
-  </table>
-
-  <h3>Divisi Elite</h3>
-  <table>
-    <tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
-    <tr><td>1</td><td>Pemain 1</td><td>0</td><td>1750</td></tr>
-    <tr><td>2</td><td>Pemain 2</td><td>0</td><td>1800</td></tr>
-    <tr><td>3</td><td>Pemain 3</td><td>0</td><td>1900</td></tr>
-    <tr><td>4</td><td>Pemain 4</td><td>0</td><td>2000</td></tr>
-    <tr><td>5</td><td>Pemain 5</td><td>0</td><td>1850</td></tr>
-    <tr><td>6</td><td>Pemain 6</td><td>0</td><td>1720</td></tr>
-    <tr><td>7</td><td>Pemain 7</td><td>0</td><td>1780</td></tr>
-    <tr><td>8</td><td>Pemain 8</td><td>0</td><td>1950</td></tr>
-    <tr><td>9</td><td>Pemain 9</td><td>0</td><td>1820</td></tr>
-    <tr><td>10</td><td>Pemain 10</td><td>0</td><td>1770</td></tr>
-    <tr><td>11</td><td>Pemain 11</td><td>0</td><td>1920</td></tr>
-    <tr><td>12</td><td>Pemain 12</td><td>0</td><td>1740</td></tr>
-    <tr><td>13</td><td>Pemain 13</td><td>0</td><td>1805</td></tr>
-    <tr><td>14</td><td>Pemain 14</td><td>0</td><td>1880</td></tr>
-    <tr><td>15</td><td>Pemain 15</td><td>0</td><td>1705</td></tr>
-  </table>
-
-
-
-<!-- Section Peraturan -->
-<section id="peraturan">
-  <h2>Peraturan Liga</h2>
-  <ul>
-    <li>Setiap pemain wajib mendaftar sebelum pertandingan.</li>
-    <li>Format pertandingan Swiss System babak menyesuaikan</li>
-    <li>Divisi Rookie: rating 0–1300, Standard: 1301–1700, Elite: 1701 ke atas.</li>
-    <li>Disiplin dan sportivitas wajib dijaga.</li>
-  </ul>
-</section>
-
-<!-- Section Galeri -->
-<section id="galeri">
-  <h2>Galeri</h2>
-  <p>Foto-foto kegiatan liga akan ditampilkan di sini.</p>
-  <!-- contoh gambar -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_rlt45.svg" alt="Contoh Catur">
-</section>
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    tabcontent[i].classList.remove("active");
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  document.getElementById(tabName).style.display = "block";
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+</script>
 
 </body>
 </html>
+
+<!-- Standard Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Standard')">Standard</button>
+</div>
+
+<div id="Standard" class="tabcontent">
+<h2>Divisi Standard</h2>
+<h3>Daftar Peserta</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>1500</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>1600</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>1550</td></tr>
+</table>
+
+<h3>Klasemen</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>0</td><td>1500</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>0</td><td>1600</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>0</td><td>1550</td></tr>
+</table>
+</div>
+
+<!-- Elite Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Elite')">Elite</button>
+</div>
+
+<div id="Elite" class="tabcontent">
+<h2>Divisi Elite</h2>
+<h3>Daftar Peserta</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>1800</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>1900</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>2000</td></tr>
+</table>
+
+<h3>Klasemen</h3>
+<table>
+<tr><th>No</th><th>Nama</th><th>Poin</th><th>Rating</th></tr>
+<tr><td>1</td><td>Pemain 1</td><td>0</td><td>1800</td></tr>
+<tr><td>2</td><td>Pemain 2</td><td>0</td><td>1900</td></tr>
+<tr><td>3</td><td>Pemain 3</td><td>0</td><td>2000</td></tr>
+</table>
+</div>
+
+<!-- Legend Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Legend')">Legend</button>
+</div>
+
+<div id="Legend" class="tabcontent">
+<h2>Divisi Legend</h2>
+<p>Rencana divisi tambahan untuk pemain dengan kekuatan maksimal di masa depan. </p>
+<p>Divisi ini disiapkan sebagai target pengembangan jangka panjang liga.</p>
+</div>
+
+<!-- Peraturan Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Peraturan')">Peraturan</button>
+</div>
+
+<div id="Peraturan" class="tabcontent">
+  <h2>Peraturan Liga Catur Pro Kaltim 2025</h2>
+  <ol>
+    <li>Peserta dibagi menjadi 3 divisi: Rookie, Standard, dan Elite.</li>
+    <li>Penyusunan peserta berdasarkan rating internal (bukan rating resmi FIDE).</li>
+    <li>Sistem pertandingan menggunakan Swiss manager.</li>
+    <li>Setiap kemenangan bernilai 1 poin, remis 0.5 poin, kalah 0 poin.</li>
+    <li>Update klasemen dilakukan setelah setiap sesi.</li>
+    <li>Diakhir musim akan ada evaluuasi, promosi dan degradasi</li>
+  </ol>
+</div>
+
+<!-- Informasi Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Informasi')">Informasi</button>
+</div>
+
+<div id="Informasi" class="tabcontent">
+  <h2>Informasi Pengurus</h2>
+  <ul>
+    <li>Ketua: Nurul Amin</li>
+    <li>Sekretaris: Abdul Gafur</li>
+  </ul>
+</div>
+
+<!-- Pendaftaran Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Pendaftaran')">Pendaftaran</button>
+</div>
+
+<div id="Pendaftaran" class="tabcontent">
+  <h2>Informasi Pendaftaran</h2>
+  <p>Hubungi panitia berikut untuk pendaftaran:</p>
+  <ul>
+    <li>Astian Dana Ahadda</li>
+  </ul>
+</div>
+
+<!-- Hadiah / Bonus Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Hadiah')">Hadiah / Bonus</button>
+</div>
+
+<div id="Hadiah" class="tabcontent">
+  <h2>Hadiah & Bonus Liga Catur Pro Kaltim 2025</h2>
+  <ul>
+    <li>Pemenang Divisi Rookie: Sertifikat + Insentif</li>
+    <li>Pemenang Divisi Standard: Sertifikat + Insentif</li>
+    <li>Pemenang Divisi Elite: Sertifikat + Insentif</li>
+    <li>Bonus tambahan jika ada sponsor atau donatur</li>
+    <li>Hadiah uang pembinaan di akhir musim</li>
+  </ul>
+</div>
+
+<!-- Sponsor Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Sponsor')">Sponsor</button>
+</div>
+<div id="Sponsor" class="tabcontent">
+  <h2>Sponsor & Pendukung</h2>
+  <p>Liga ini didukung oleh:</p>
+  <ul>
+    <li>Bubuhan Catur Mania Kaltim (BCM)</li>
+    <li>Junior Chess Club</li>
+  </ul>
+</div>
+
+<!-- Berita Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Berita')">Berita</button>
+</div>
+
+<div id="Berita" class="tabcontent">
+  <h2>Berita & Update</h2>
+  <ul>
+    <li>[05 Sept 2025] Liga Pro resmi di sosialisasikan</li>
+    <li>[07 Sept 2025] Website resmi liga diluncurkan.</li>
+  </ul>
+</div>
+
+<!-- Galeri Tab -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event,'Galeri')">Galeri</button>
+</div>
+
+<div id="Galeri" class="tabcontent">
+  <h2>Galeri Foto</h2>
+  <p>Dokumentasi kegiatan Liga Catur Pro Kaltim 2025 akan ditampilkan di sini.</p>
+  <!-- Contoh gambar -->
+  <img src="https://via.placeholder.com/300x200" alt="Contoh Foto" style="margin:10px; border-radius:10px;">
+  <img src="https://via.placeholder.com/300x200" alt="Contoh Foto" style="margin:10px; border-radius:10px;">
+</div>
