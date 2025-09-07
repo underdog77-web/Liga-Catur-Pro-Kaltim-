@@ -6,7 +6,7 @@
   <title>Liga Catur</title>
 </head>
 <body>
-  <h1>Selamat Datang di Liga Catur Pro Kaltim!</h1>
+  <h1>Selamat Datang di Liga Pro Catur Kaltim!</h1>
   <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +15,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Liga Catur Pro Kaltim 2025</title>
+  <title>Liga Pro Catur Kaltim 2025</title>
   <style>
   body { font-family: Arial, sans-serif; font-size:16px; margin:0; padding:0; background:#f4f6f9; }
 table th, table td { padding:12px; font-size:14px; text-align:center; }
@@ -40,7 +40,7 @@ table th, table td { padding:12px; font-size:14px; text-align:center; }
 <!-- Section Disclaimer -->
 <section style="background:#f1c40f; color:#2c3e50; padding:30px 20px; text-align:center; border-radius:10px; max-width:1000px; margin:20px auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
   <p style="font-size:16px; line-height:1.5; margin:0;">
-    <strong>Liga Catur Pro Kaltim 2025</strong> adalah ajang internal pembinaan catur di Kalimantan Timur. Sistem klasemen dan rating yang digunakan bersifat internal, bukan rating resmi FIDE. Tujuan utama liga ini adalah memberi kesempatan atlet untuk berproses, berkembang, dan merasakan pengalaman bertanding, bukan semata-mata mengejar hadiah.
+    <strong>Liga Pro Catur Kaltim 2025</strong> adalah ajang internal pembinaan catur di Kalimantan Timur. Sistem klasemen dan rating yang digunakan bersifat internal, bukan rating resmi FIDE. Tujuan utama liga ini adalah memberi kesempatan atlet untuk berproses, berkembang, dan merasakan pengalaman bertanding, bukan semata-mata mengejar hadiah.
   </p>
 </section
 
@@ -48,7 +48,7 @@ table th, table td { padding:12px; font-size:14px; text-align:center; }
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Liga Catur Pro Kaltim 2025</title>
+<title>Liga Pro Catur Kaltim 2025</title>
 <style>
 body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f9; }
 header { background:#3498db; color:#fff; padding:20px; text-align:center; }
@@ -70,7 +70,7 @@ tr:hover { background:#d6eaf8; }
 <body>
 
 <header>
-<h1>Liga Catur Pro Kaltim 2025</h1>
+<h1>Liga Pro Catur Kaltim 2025</h1>
 <p>Belajar, Berlatih, Bertanding, meraih prestasi tertinggi </p>
 </header>
 
@@ -82,6 +82,19 @@ tr:hover { background:#d6eaf8; }
 <!-- Rookie Tab -->
 <div id="Rookie" class="tabcontent active">
 <h2>Divisi Rookie</h2>
+<div id="Rookie" class="tabcontent">
+  <h2>Divisi Rookie</h2>
+  <!-- PETUNJUK EDIT -->
+  <p><em>Petunjuk: Tambahkan pemain baru di tabel di bawah. Ganti [Nama] dan [Rating]. Tabel akan otomatis urut rating besar → kecil.</em></p>
+  
+  <h3>Daftar Peserta</h3>
+  <table id="tableRookie">
+    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+    <tr><td>1</td><td>Pemain 1</td><td>1200</td></tr>
+    <tr><td>2</td><td>Pemain 2</td><td>1150</td></tr>
+    <!-- Tambahkan pemain baru di sini -->
+  </table>
+</div>
 <h3>Daftar Peserta</h3>
 <table>
 <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
@@ -119,7 +132,41 @@ function openTab(evt, tabName) {
   evt.currentTarget.classList.add("active");
 }
 </script>
+<!-- ===============================
+      SCRIPT TAMBAHAN SORT RATING
+=============================== -->
+<script>
+function sortTable(id) {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById(id);
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < rows.length-1; i++) {
+      shouldSwitch = false;
+      x = parseInt(rows[i].cells[2].innerHTML); // kolom rating
+      y = parseInt(rows[i+1].cells[2].innerHTML);
+      if (x < y) { // rating besar di atas
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+      switching = true;
+    }
+  }
+}
 
+// panggil untuk tiap divisi
+window.onload = function() {
+  sortTable("tableRookie");
+  sortTable("tableStandard");
+  sortTable("tableElite");
+  // nanti bisa ditambahkan Legend juga
+};
+</script>
 </body>
 </html>
 
@@ -130,6 +177,19 @@ function openTab(evt, tabName) {
 
 <div id="Standard" class="tabcontent">
 <h2>Divisi Standard</h2>
+<div id="Rookie" class="tabcontent">
+  <h2>Divisi Rookie</h2>
+  <!-- PETUNJUK EDIT -->
+  <p><em>Petunjuk: Tambahkan pemain baru di tabel di bawah. Ganti [Nama] dan [Rating]. Tabel akan otomatis urut rating besar → kecil.</em></p>
+  
+  <h3>Daftar Peserta</h3>
+  <table id="tableRookie">
+    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+    <tr><td>1</td><td>Pemain 1</td><td>1200</td></tr>
+    <tr><td>2</td><td>Pemain 2</td><td>1150</td></tr>
+    <!-- Tambahkan pemain baru di sini -->
+  </table>
+</div>
 <h3>Daftar Peserta</h3>
 <table>
 <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
@@ -154,6 +214,19 @@ function openTab(evt, tabName) {
 
 <div id="Elite" class="tabcontent">
 <h2>Divisi Elite</h2>
+<div id="Rookie" class="tabcontent">
+  <h2>Divisi Rookie</h2>
+  <!-- PETUNJUK EDIT -->
+  <p><em>Petunjuk: Tambahkan pemain baru di tabel di bawah. Ganti [Nama] dan [Rating]. Tabel akan otomatis urut rating besar → kecil.</em></p>
+  
+  <h3>Daftar Peserta</h3>
+  <table id="tableRookie">
+    <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
+    <tr><td>1</td><td>Pemain 1</td><td>1200</td></tr>
+    <tr><td>2</td><td>Pemain 2</td><td>1150</td></tr>
+    <!-- Tambahkan pemain baru di sini -->
+  </table>
+</div>
 <h3>Daftar Peserta</h3>
 <table>
 <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
@@ -188,7 +261,7 @@ function openTab(evt, tabName) {
 </div>
 
 <div id="Peraturan" class="tabcontent">
-  <h2>Peraturan Liga Catur Pro Kaltim 2025</h2>
+  <h2>Peraturan Liga Pro Catur Kaltim 2025</h2>
   <ol>
     <li>Peserta dibagi menjadi 3 divisi: Rookie, Standard, dan Elite.</li>
     <li>Penyusunan peserta berdasarkan rating internal (bukan rating resmi FIDE).</li>
@@ -231,7 +304,7 @@ function openTab(evt, tabName) {
 </div>
 
 <div id="Hadiah" class="tabcontent">
-  <h2>Hadiah & Bonus Liga Catur Pro Kaltim 2025</h2>
+  <h2>Hadiah & Bonus Liga Pro Catur Kaltim 2025</h2>
   <ul>
     <li>Pemenang Divisi Rookie: Sertifikat + Insentif</li>
     <li>Pemenang Divisi Standard: Sertifikat + Insentif</li>
@@ -274,7 +347,7 @@ function openTab(evt, tabName) {
 
 <div id="Galeri" class="tabcontent">
   <h2>Galeri Foto</h2>
-  <p>Dokumentasi kegiatan Liga Catur Pro Kaltim 2025 akan ditampilkan di sini.</p>
+  <p>Dokumentasi kegiatan Liga Pro Catur Kaltim 2025 akan ditampilkan di sini.</p>
   <!-- Contoh gambar -->
   <img src="https://via.placeholder.com/300x200" alt="Contoh Foto" style="margin:10px; border-radius:10px;">
   <img src="https://via.placeholder.com/300x200" alt="Contoh Foto" style="margin:10px; border-radius:10px;">
