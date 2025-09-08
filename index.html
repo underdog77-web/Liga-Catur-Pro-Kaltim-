@@ -33,6 +33,13 @@ table th, table td { padding:12px; font-size:14px; text-align:center; }
     tr:hover { background:#d6eaf8; }
     ul { list-style-type: disc; padding-left:20px; }
     img { max-width:100%; border-radius:8px; margin:10px 0; }
+    header {
+  background:#3498db;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+  margin-bottom: 20px; /* jarak ke tab */
+}
   </style>
 </head>
 <body>
@@ -49,23 +56,85 @@ table th, table td { padding:12px; font-size:14px; text-align:center; }
 <head>
 <meta charset="UTF-8">
 <title>Liga Pro Catur Kaltim 2025</title>
+
 <style>
-body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f9; }
-header { background:#3498db; color:#fff; padding:20px; text-align:center; }
-section { max-width:600px; margin:20px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-h2,h3 { color:#2c3e50; margin-top:0; }
-table { width:100%; border-collapse: collapse; margin-bottom:20px; }
-th, td { border:1px solid #ddd; padding:8px; text-align:center; }
-th { background:#3498db; color:#fff; }
-tr:nth-child(even) { background:#ecf0f1; }
-tr:hover { background:#d6eaf8; }
-/* Tab styles */
-.tabs { display:flex; justify-content:center; margin-bottom:20px; flex-wrap: wrap; }
-.tabs button { background:#3498db; color:#fff; border:none; padding:10px 20px; margin:2px; border-radius:5px; cursor:pointer; }
-.tabs button.active { background:#2c3e50; }
-.tabcontent { display:none; }
-.tabcontent.active { display:block; }
+body { 
+  font-family: Arial, sans-serif; 
+  margin:0; 
+  padding:0; 
+  background:#f4f6f9; 
+}
+header { 
+  background:#3498db; 
+  color:#fff; 
+  padding:20px; 
+  text-align:center; 
+}
+section { 
+  max-width:600px; 
+  margin:20px auto; 
+  background:#fff; 
+  padding:20px; 
+  border-radius:10px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.1); 
+}
+h2,h3 { 
+  color:#2c3e50; 
+  margin-top:0; 
+}
+table { 
+  width:100%; 
+  border-collapse: collapse; 
+  margin-bottom:20px; 
+}
+th, td { 
+  border:1px solid #ddd; 
+  padding:8px; 
+  text-align:center; 
+}
+th { 
+  background:#3498db; 
+  color:#fff; 
+}
+tr:nth-child(even) { 
+  background:#ecf0f1; 
+}
+tr:hover { 
+  background:#d6eaf8; 
+}
+
+/* Tab styles pakai grid 3 kolom */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 10px; /* jarak antar tombol */
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.tabs button {
+  background:#3498db; 
+  color:#fff; 
+  border:none; 
+  padding:10px; 
+  border-radius:5px; 
+  cursor:pointer;
+  width: 100%;
+}
+
+.tabs button.active { 
+  background:#2c3e50; 
+}
+
+.tabcontent { 
+  display:none; 
+}
+.tabcontent.active { 
+  display:block; 
+}
 </style>
+
+
 </head>
 <body>
 
@@ -73,12 +142,9 @@ tr:hover { background:#d6eaf8; }
 <h1>Liga Pro Catur Kaltim 2025</h1>
 <p>Belajar, Berlatih, Bertanding, meraih prestasi tertinggi </p>
 </header>
-
-<section>
 <div class="tabs">
   <button class="tablink active" onclick="openTab(event,'Rookie')">Rookie</button>
 </div>
-
 <!-- Rookie Tab -->
 <div id="Rookie" class="tabcontent active">
 <h2>Divisi Rookie</h2>
