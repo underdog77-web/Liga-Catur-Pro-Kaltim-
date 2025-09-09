@@ -142,6 +142,53 @@ tr:hover {
 <h1>Liga Pro Catur Kaltim 2025</h1>
 <p>Belajar, Berlatih, Bertanding, meraih prestasi tertinggi </p>
 </header>
+
+<div id="datetime" style="font-family: 'Segoe UI', Tahoma, sans-serif; 
+                          font-size: 28px; 
+                          font-weight: bold; 
+                          color: #ffffff; 
+                          text-align: center; 
+                          padding: 15px 0; 
+                          background: linear-gradient(135deg, #1e3c72, #2a5298); 
+                          border-radius: 12px; 
+                          box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+                          width: fit-content; 
+                          margin: 20px auto;">
+</div>
+
+<script>
+function updateDateTime() {
+  const now = new Date();
+
+  // Konversi ke WITA (UTC+8)
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const witaTime = new Date(utc + (8 * 3600000));
+
+  // Hari dan bulan
+  const days = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+  const months = ["Januari","Februari","Maret","April","Mei","Juni",
+                  "Juli","Agustus","September","Oktober","November","Desember"];
+
+  const dayName = days[witaTime.getDay()];
+  const date = witaTime.getDate();
+  const monthName = months[witaTime.getMonth()];
+  const year = witaTime.getFullYear();
+
+  // Jam
+  const hours = String(witaTime.getHours()).padStart(2, '0');
+  const minutes = String(witaTime.getMinutes()).padStart(2, '0');
+  const seconds = String(witaTime.getSeconds()).padStart(2, '0');
+
+  // Tampilkan
+  document.getElementById('datetime').innerText =
+    `${dayName}, ${date} ${monthName} ${year} | ${hours}:${minutes}:${seconds}`;
+}
+
+// Update setiap 1 detik
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+
 <div class="tabs">
   <button class="tablink active" onclick="openTab(event,'Rookie')">Rookie</button>
 </div>
@@ -161,10 +208,11 @@ tr:hover {
 <table>
 <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
 <tr><td>1</td><td>Meva Syifa Salsabila</td><td>1170</td></tr>
-<tr><td>2</td><td>Salma Aqilah</td><td>1124</td></tr>
-<tr><td>3</td><td>Raymond Shacio Roynalie</td><td>1100</td></tr>
-<tr><td>4</td><td>P</td><td>1100</td></tr>
-<tr><td>5</td><td>P</td><td>1000</td></tr>
+<tr><td>2</td><td>M.Fakhri Attaillah</td><td>1150</td></tr>
+<tr><td>3</td><td>Salma Aqilah</td><td>1124</td></tr>
+<tr><td>4</td><td>Raymond Shacio Roynalie</td><td>1100</td></tr>
+<tr><td>5</td><td>Peserta</td><td>1000</td></tr>
+<tr><td>6</td><td>Peseeta</td><td>1000</td></tr>
 
 </table>
 
@@ -256,12 +304,13 @@ window.onload = function() {
 <h3>Daftar Peserta</h3>
 <table>
 <tr><th>No</th><th>Nama</th><th>Rating Awal</th></tr>
-<tr><td>1</td><td>Malvin Bhagya Lee </td><td>1462</td></tr>
-<tr><td>2</td><td>Mikail Fabian</td><td>1450</td></tr>
-<tr><td>3</td><td>Muhammad Syafiq Syadidul Azmi</td><td>1450</td></tr>
-<tr><td>4</td><td>Muhammad Akhdan Rizki</td><td>1430</td></tr>
-<tr><td>5</td><td>Muhammad Azib Wardhana</td><td>1320</td></tr>
-<tr><td>6</td><td></td><td></td></tr>
+<tr><td>1</td><td>Jericho Khennie Pinontoan</td><td>1560</td></tr>
+<tr><td>2</td><td>Malvin Bhagya Lee </td><td>1462</td></tr>
+<tr><td>3</td><td>Mikail Fabian</td><td>1450</td></tr>
+<tr><td>4</td><td>Muhammad Syafiq Syadidul Azmi</td><td>1450</td></tr>
+<tr><td>5</td><td>Muhammad Akhdan Rizki</td><td>1430</td></tr>
+<tr><td>6</td><td>Muhammad Azib Wardhana</td><td>1320</td></tr>
+<tr><td>7</td><td></td><td></td></tr>
 </table>
 
 <h3>Klasemen</h3>
